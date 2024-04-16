@@ -17,7 +17,21 @@ public class Principal {
         otraPelicula.nombre = "Matrix";
         otraPelicula.fechaDeLanzamiento = 1998;
         otraPelicula.duracionEnMinutos = 180;
+        System.out.println("Média de evaluaciones de la película: " +miPelicula.calculaMedia());
 
-        // otraPelicula.muestraFichaTecnica();
+        otraPelicula.muestraFichaTecnica();
+
+        Pelicula tercerPelicula = new Pelicula();
+        miPelicula.nombre = "La familia del futuro";
+        miPelicula.fechaDeLanzamiento = 2007;
+        miPelicula.duracionEnMinutos = 95;
+        miPelicula.incluidoEnElPlan = true;
+
+        miPelicula.muestraFichaTecnica();
+        miPelicula.evalua(10);
+        miPelicula.evalua(10);
+        miPelicula.evalua(7.8);
+        System.out.println("Média de evaluaciones de la película: " +miPelicula.calculaMedia());
     }
 }
+
